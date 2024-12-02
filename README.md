@@ -65,28 +65,37 @@ Y= A⊕B
 **PROGRAM**
 
 Program for logic gates and verify its truth table in quartus using Verilog programming
-
- Developed by: RegisterNumber: M.Mahalakshmi   24900868
+```
+module experiment1(f1,f2,f3,f4,f5,f6,f7,a,b);
+input a,b;
+output f1,f2,f3,f4,f5,f6,f7;
+assign f1=a&b;
+assign f2=a|b;
+assign f3=~a;
+assign f4=~f1;
+assign f5=~f2;
+assign f6=a^b;
+assign f7=~(a^b);
+endmodule
+```
+```
+Developed by:M.Mahalakshmi
+RegisterNumber:24900868
+```
  
 **Logic symbol & Truthtable**
-module logicgates(a,b,c);
-input a;
-input b;
-output[6:0]c;
-assign c[0]=a&b;
-assign c[1]=a|b;
-assign c[2]=~(a&b);
-assign c[3]=~(a|b);
-assign c[4]=a^b;
-assign c[5]=~(a^b);
-assign c[6]=~a;
-endmodule
+
+![WhatsApp Image 2024-12-02 at 15 27 47_b3db8e82](https://github.com/user-attachments/assets/1aba6fdb-6437-46ca-bb15-ea465d0c8835)
+
 
 **RTL realization Output:** 
-![Screenshot 2024-11-12 105102](https://github.com/user-attachments/assets/b4a76058-4915-46ca-9f3f-aeb0070d6d46)
+
+![exp1](https://github.com/user-attachments/assets/3a2b6cd0-c781-4a8d-a8f5-95a8c719d59c)
 
 **RTL**
 
-**Result:**
+![exp1 (2)](https://github.com/user-attachments/assets/f29c3854-70b7-46b6-85d9-f18906774d4c)
 
+**Result:**
+The truth table of logic gates in Quartus II using Verilog programming is verified.
 
